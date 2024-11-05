@@ -8,15 +8,86 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
     <style>
-      
+      body{
+        height: 3000px;
+      }
         header{
             width: 100%;
             height: 100vh;
             background: url("img/slider3.jpg") no-repeat center center;
             background-size: cover;
+            padding-top: 40px;
         }
 
+        .header_info{
+            /* border:  solid #000; */
+            height: 175px; 
+            width: 1220px;
+            margin:0 auto ;
+            padding: 0 40px 25px;
+            box-shadow: 2px 2px 20px #afafaf;
+            background: #FFF;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header_info_logo{
+            width: 220px;
+        }
+         img{
+            width: 100%;
+        }
+        .header_info_contact{
+        border: 1px solid #000;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 530px;
+        }
+        .header_info_contact_button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+            width: 210px;
+            padding: 18px 0;
+            border: none;
+            background: #1c9dbf;
+            color: #FFF;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 200ms linear ;
+        }
 
+        .header_info_contact_button:hover{
+            background: #285bbb;
+            transform: translateY(-5%);
+        }
+        .header_info_contact_button span{
+            margin-right: 10px;
+            /* font-size: 18px; */
+            font-weight: bold;
+        }
+        .header_info_contact_button img{
+            display: block;
+            width: 15px;
+        }
+        .header_info_contact_info{
+            /* border: 1px solid #000; */
+        }
+        .header_info_contact_info a{
+            display: block;
+            color: #424f59;
+            margin: 10px 0;
+            /* letter-spacing: 1px; */
+}
+        .header_info_contact_icon{
+                width: 50px;
+                color: red;
+        }
+    
     </style>
 </head>
 <body>
@@ -24,26 +95,28 @@
     <div class="header_info">
         <div class="header_info_logo">
             <a href="#">
-            <img src="img/logo.jpg" alt="" hidden>
+            <img src="img/logo.jpg" alt="">
             </a>
         </div>
         <div class="header_info_contact">
-            <div class="header_info_contact_button">
-                <button>رزرو نوبت اینترنتی</button>
-            </div>
+                <button class="header_info_contact_button">
+                    <span>رزرو نوبت اینترنتی</span>
+                    <img src="img/plus.svg" alt="">
+                </button>
+                
             <div class="header_info_contact_info">
-                <a href="tel:09205044086" >شماره تلفن: ۰۹۲۰۵۰۴۴۰۸۶</a>
-                <a href="mail:mahdi.rajabi.biz@gmail.com">ایمیل: mahdi.rajabi.biz@gmail.com</a>
+                <a href="tel:09205044086" ><strong>شماره تلفن</strong>: ۰۹۲۰۵۰۴۴۰۸۶</a>
+                <a href="mail:mahdi.rajabi.biz@gmail.com"><strong>ایمیل</strong>: medical@yoursite.com</a>
             </div>
             <div class="header_info_contact_icon">
-                <span class="cz_info_icon fa czico-078-support"></span>
+                <img src="img/support.svg"></img>
             </div>
         </div>
 
     </div>
-    <menu class="header_menu">
+    <!-- <menu class="header_menu">
 
-    </menu>
+    </menu> -->
 </header>
 </body>
 </html>
