@@ -1,21 +1,198 @@
 @import url("normalize.css");
 @import url('https://fonts.cdnfonts.com/css/dana');
 
-body{
-    font-family: "dana" , Tahoma , sans-serif;
+body {
+    font-family: "dana", Tahoma, sans-serif;
     color: #333;
     direction: rtl;
+    height: 3000px;
 }
 
-@media screen and (max-width: 1170px) {
+header {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/slider3.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 40px;
+}
 
-    /*style*/
+.header_info {
+    width: 90%;
+    height: 175px;
+    margin: 0 auto;
+    padding: 0 40px 25px;
+    box-shadow: 2px 2px 20px #afafaf;
+    background: #FFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.header_info_logo {
+    flex-basis: 220px;
+}
+
+img {
+    width: 100%;
+}
+
+.header_info_contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.header_info_contact_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-basis: 210px;
+    padding: 18px 0;
+    border: none;
+    background: #1c9dbf;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.header_info_contact_button:hover {
+    background: #285bbb;
+    transform: translateY(-5%);
+}
+
+.header_info_contact_button span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.header_info_contact_button img {
+    display: block;
+    flex-basis: 15px;
+}
+
+.header_info_contact_info {
+    /*margin: 0 25px;*/
+    flex-shrink: 0;
+}
+
+.header_info_contact_info a {
+    display: block;
+    color: #424f59;
+    margin: 10px 0;
+}
+
+.header_info_contact_icon {
+    flex-basis: 50px;
+    color: red;
+}
+
+.header_info_navbar {
+    display: none;
+}
+
+.header_nav {
+    width: 85%;
+    margin: 0 auto;
+    background: #285bbb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav_menu {
+    border: 1px solid #000;
+}
+
+.header_nav_menu_lists {
+    display: flex;
+    border: 1px solid #000;
+
+}
+
+.header_nav_menu_list {
+
+}
+
+.header_nav_menu_list_item {
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.header_nav_icon {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.header_nav_icon div:not(.header_nav_icon_line){
+    padding: 0 20px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.header_nav_icon_search{
+
+}
+.header_nav_icon_line {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 1px;
+
+}
+
+.header_nav_icon_cart {
+}
+
+.header_nav_icon_social {
+}
+
+@media screen and (max-width: 992px) {
+
+    .header_info {
+        width: 95%;
+    }
+
+    .header_info_contact_info {
+        display: none;
+    }
+    .header_info_logo{
+        /*flex-shrink: 10;*/
+        /*flex-grow: 1;*/
+    }
+    .header_info_contact {
+        width: fit-content;
+        flex-grow: 0;
+        /*max-width: 400px;*/
+    }
+    .header_info_contact_icon{
+        /*display: none;*/
+    }
+    .header_info_contact_button {
+        margin-right: 25px;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
-    /*style*/
+    .header_info_contact {
+        display: none;
+    }
+
+    .header_info_navbar {
+        display: block;
+        background: #285bbb;
+        padding: 10px;
+        width: 15px;
+        box-sizing: content-box;
+
+    }
 
 }
 
