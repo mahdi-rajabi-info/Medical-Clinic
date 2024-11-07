@@ -1,0 +1,28 @@
+@media screen and (max-width: 992px) {
+
+    .header_info {
+        width: 95%;
+    }
+
+    .header_info_contact_info {
+        display: none;
+    }
+    .header_info_logo{
+        /*flex-shrink: 10;*/
+        /*flex-grow: 1;*/
+    }
+    .header_info_contact {
+        width: fit-content;
+        flex-grow: 0;
+        /*max-width: 400px;*/
+    }
+    .header_info_contact_icon{
+        /*display: none;*/
+    }
+    .header_info_contact_button {
+        margin-right: 25px;
+    }
+    .header_nav_icon{
+        display: none;
+    }
+}
