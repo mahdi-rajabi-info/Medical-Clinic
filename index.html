@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="font/fontawesome-free-5.15.4-web/css/all.min.css">
     <title>Document</title>
     <style>
 
@@ -41,7 +42,9 @@
     <nav class="header_nav">
         <div class="header_nav_menu">
             <ul class="header_nav_menu_lists">
-                <li class="header_nav_menu_list"><a href="#" class="header_nav_menu_list_item">H</a></li>
+                <li class="header_nav_menu_list">
+                    <a href="#" class="header_nav_menu_list_item active-menu fas fa-home">
+                    </a></li>
                 <li class="header_nav_menu_list"><a href="#" class="header_nav_menu_list_item">درباره ما</a></li>
                 <li class="header_nav_menu_list"><a href="#" class="header_nav_menu_list_item">خدمات</a></li>
                 <li class="header_nav_menu_list"><a href="#" class="header_nav_menu_list_item">سوالات متداول</a></li>
@@ -52,15 +55,24 @@
         </div>
         <div class="header_nav_icon">
             <div class="header_nav_icon_search">
-                S
+                <input type="radio" id="radio" hidden="">
+                <label for="radio" class="header_nav_icon_search-button">
+                    <span class="fas fa-search"></span>
+                    </label>
+                <div class="header_nav_search-box">
+                    <input type="text" placeholder="دنبال چه موضوعی هستید...">
+                    <span class="fas fa-search header_nav_search-box_icon"></span>
+                </div>
             </div>
             <div class="header_nav_icon_line"></div>
-            <div class="header_nav_icon_cart">C</div>
+            <div class="header_nav_icon_cart">
+                <sapn class="fas fa-shopping-basket"></sapn>
+            </div>
             <div class="header_nav_icon_line"></div>
             <div class="header_nav_icon_social">
-                <span>D</span>
-                <span>D</span>
-                <span>D</span>
+                <span class="fab fa-facebook-f"></span>
+                <span class="fab fa-pinterest-p"></span>
+                <span class="fab fa-linkedin-in"></span>
             </div>
         </div>
     </nav>
