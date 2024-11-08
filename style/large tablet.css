@@ -1,5 +1,6 @@
 @media screen and (max-width: 992px) {
 
+
     .header_info {
         width: 95%;
     }
@@ -7,22 +8,29 @@
     .header_info_contact_info {
         display: none;
     }
-    .header_info_logo{
-        /*flex-shrink: 10;*/
-        /*flex-grow: 1;*/
-    }
+
     .header_info_contact {
-        width: fit-content;
         flex-grow: 0;
-        /*max-width: 400px;*/
     }
-    .header_info_contact_icon{
-        /*display: none;*/
+
+    .header_nav {
+        width: 90%;
     }
+
     .header_info_contact_button {
-        margin-right: 25px;
+        margin-right: 20px;
+        padding: 20px;
     }
-    .header_nav_icon{
+
+    .header_nav_menu {
+        margin-right: 10px;
+    }
+
+    .header_nav_menu_list_item {
+        font-size: 15px;
+    }
+
+    .header_nav_icon_social {
         display: none;
     }
 }
