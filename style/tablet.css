@@ -1,11 +1,12 @@
 @media screen and (max-width: 768px) {
     header {
         padding-top: unset;
+        /*border: 1px solid #000;*/
     }
 
     .header_background {
         position: relative;
-        height: 50vh;
+        top: 0;
     }
 
     .header_info {
@@ -32,7 +33,7 @@
     }
 
     .header_info_navbar {
-        padding: 10px;
+        padding: 10px 13px;
         border-radius: 3px;
         font-size: 22px;
         cursor: pointer;
@@ -53,14 +54,14 @@
         left: 0;
         background: linear-gradient(180deg, #1c9dbf, #285bbb);
         padding: 20px 0;
-        display: flex;
+        /*display: flex;*/
         flex-flow: wrap column;
         justify-content: space-between;
+        display: none;
     }
 
     .header_nav_menu {
         margin-right: unset;
-        height: 100%;
     }
 
     .header_nav_menu_lists {
@@ -94,7 +95,40 @@
     }
 
     .header_nav_icon {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .header_nav_icon_search{
         display: none;
+    }
+    .header_nav_icon_cart{
+        display: none;
+    }
+
+    .header_nav_icon_social{
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+    }
+
+    .hero_title{
+        /*margin-top: 50px;*/
+        /*margin-right: 5%;*/
+    }
+    .hero_header_title{
+        font-size: 16px;
+    }
+    .hero_main_title{
+        width: 270px;
+        font-size: 27px;
+        line-height: 55px;
+    }
+    .hero_footer_desc{
+        width: 350px;
+        font-size: 16px;
+        line-height: 35px;
     }
 
 }
